@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @caoruiR
-- 👀 I’m interested in manbo
-- 🌱 I’m currently learning owo
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me 
+- 👀 I’m interested in hush
+- 🌱 I’m currently learning manbo
+- 💞️ I’m looking to collaborate on don't speak
+- 📫 How to reach me wow
 - 😄 Pronouns: 
 - ⚡ Fun fact: 
 
