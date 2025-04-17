@@ -7,45 +7,45 @@
 - ⚡ Fun fact: 
 
 erDiagram
+    USER ||--o{ USER : created_by
+    SYS_USER ||--|| USER : sys_user_id
+
     USER {
-        bigint id PK "主键"
-        datetime created_at "创建时间"
-        datetime updated_at "更新时间"
-        datetime deleted_at "删除时间，可空"
-        varchar uid "用户ID"
-        varchar image_url "图片URL"
-        varchar identify_result "识别结果"
-        bigint created_by FK "创建者ID，引用User.id"
+        bigint id PK
+        datetime created_at
+        datetime updated_at
+        datetime deleted_at
+        varchar uid
+        varchar image_url
+        varchar identify_result
+        bigint created_by FK
     }
     SYS_USER {
-        bigint id PK "主键"
-        datetime created_at "创建时间"
-        datetime updated_at "更新时间"
-        datetime deleted_at "删除时间，可空"
-        varchar customer_name "客户姓名"
-        varchar customer_phone "客户电话"
-        bigint sys_user_id FK "系统用户ID，引用User.id"
-        bigint sys_user_pwd "系统用户密码"
+        bigint id PK
+        datetime created_at
+        datetime updated_at
+        datetime deleted_at
+        varchar customer_name
+        varchar customer_phone
+        bigint sys_user_id FK
+        bigint sys_user_pwd
     }
     JWT {
-        bigint id PK "主键"
-        datetime created_at "创建时间"
-        datetime updated_at "更新时间"
-        datetime deleted_at "删除时间，可空"
-        text jwt "JWT令牌"
+        bigint id PK
+        datetime created_at
+        datetime updated_at
+        datetime deleted_at
+        text jwt
     }
     RETENTION_FILE {
-        bigint id PK "主键"
-        datetime created_at "创建时间"
-        datetime updated_at "更新时间"
-        datetime deleted_at "删除时间，可空"
-        varchar file_name "文件名"
-        varchar file_path "文件路径"
-        bigint chunk_total "分块总数"
+        bigint id PK
+        datetime created_at
+        datetime updated_at
+        datetime deleted_at
+        varchar file_name
+        varchar file_path
+        bigint chunk_total
     }
-
-    USER ||--o{ USER : "created_by"
-    SYS_USER ||--|| USER : "sys_user_id"
 
 <!---
 caoruiR/caoruiR is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
